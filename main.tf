@@ -16,7 +16,7 @@ module "layers" {
             prefix_for_zip = "python"
         },
         {
-            path = "${path.module}/layers/common_scripts", # Path to the common scripts
+            path = "${path.module}/layers/common-scripts", # Path to the common scripts
             prefix_for_zip = "python"
         },
     ]
