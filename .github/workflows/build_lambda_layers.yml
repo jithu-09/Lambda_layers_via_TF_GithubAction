@@ -5,7 +5,7 @@ on:
   #   branches:
   #     - main
   #   paths:
-  #     - lambda-python-layers/layers/
+  #     - Lambda_layers_via_TF_GithubAction/layers/
   workflow_dispatch:
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_REGION: us-east-1
       TERRAFORM_VER: 1.6.6
-      TERRAFORM_PATH: lambda-python-layers/
+      TERRAFORM_PATH: Lambda_layers_via_TF_GithubAction/
       PYTHON_VERSION: '3.10'
 
     steps:
