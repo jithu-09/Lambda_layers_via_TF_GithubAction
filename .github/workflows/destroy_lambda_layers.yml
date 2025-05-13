@@ -23,6 +23,11 @@ jobs:
         with:
           terraform_version: ${{ env.TERRAFORM_VER }}
 
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
       - name: Terraform Init
         #working-directory: ${{ env.TERRAFORM_PATH }}
         run: terraform init
